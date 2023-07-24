@@ -29,9 +29,6 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
@@ -49,11 +46,51 @@
 										<h1>Intelligent Agents</h1>
                                         <h2>Formative and e-Portfolio Activities</h2>
 									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-								</div>
+
+                                    <h3>Unit6</h3>
+									<p>Creating Agent Dialogues</p>
+
+                                    <p>Create an agent dialogue, using KQML and KIF, between two agents (named Alice and Bob).</p>
+                                    <p>Alice is an agent designed to procure stock and Bob is an agent that controls the stock levels for a warehouse. This dialogue should see Alice asking Bob about the available stock of 50 inch televisions, and also querying the number of HDMI slots the televisions have.</p>
+
+                                    <p><b>Alice asking Bob about the available stock of 50 inch televisions</b></p>
+                                    <p>(KQML-AGENT-SEND :receiver Bob :content (ASK :receiver all-items :content (ITEM-NAME ?item "50 inch television")))</p>
+
+                                    <p><b>Alice asking Bob about the number of HDMI slots the televisions have</b></p>
+                                    <p>(KQML-AGENT-SEND :receiver Bob :content (ASK :receiver all-items :content (HAS-SLOT ?item HDMI-slots the televisions have))))</p>
+
+                                    <h3>Unit8</h3>
+									<p>Creating Parse Trees</p>
+
+                                    <p>＊About grammar</p>
+                                    <p>NOUN, VERB, PRON : pronoun, ADP : adposition, DET : determiner</p>
+
+                                    <p>The government raised interest rates.</P>
+                                        <p>The: DET</P>
+                                        <p>government: NOUN</P>
+                                        <p>raised: VERB</P>
+                                        <p>interest: NOUN</P>
+                                        <p>rates: NOUN</P>
+
+                                    <p>The internet gives everyone a voice.</P>
+                                        <p>The: DET</P>
+                                        <p>internet: NOUN</P>
+                                        <p>gives: VERB</P>
+                                        <p>everyone: PRON</P>
+                                        <p>a: DET</P>
+                                        <p>voice: NOUN</P>
+
+                                    <p>The man saw the dog with the telescope.</P>
+                                        <p>The: DET</P>
+                                        <p>man: NOUN</P>
+                                        <p>saw: VERB</P>
+                                        <p>the: DET</P>
+                                        <p>dog: NOUN</P>
+                                        <p>with: ADP</P>
+                                        <p>the: DET</P>
+                                        <p>telescope: NOUN</P>
+
+									</div>
 							</section>
 
 					</div>
