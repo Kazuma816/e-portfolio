@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Knowledge Representation and Reasoning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Knowledge Representation and Reasoning</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Intelligent Agents</h1>
+                                        <h2>Formative and e-Portfolio Activities</h2>
+									</header>
+
+                                    <h3>Unit1</h3>
+									<p>Formative Activities</p>
+
+                                    <p>Activity 1</p>
+
+				    <p>‘knowing’</p>
+									 <p>a. A second language in which you are fluent.
+</p>
+									<p>c. A close friend.</p>
+									<p>g. The weather where you are now.
+</p>
+									<p>‘having information’</p>
+									<p>b. The content of a television news programme.</p>
+									<p>d. A company’s annual report.</p>
+									<p>e. Your close friend’s partner whom you have yet to meet.</p>
+									<p>f. The weather on the other side of the world.</p>
+
+									<p>Activity 2</p>
+
+									<p>The main distinguishing feature is whether or not you know the information without trying to get it yourself. 'Knowing' is information that you already know, and you don’t get your information from outside sources. On the other hand, ‘having information’ is information that you get information from outside sources. If there are not outside sources, you don’t know. </p>
+									
+				    
+
+                                    <h3>Unit3</h3>
+									<p>Formative Activities</p>
+
+                                    <p>Activity 1</p>
+									<p>・Chapter 2 Question 4 - The barber's paradox</p>
+									<p> The paradox can be expressed in first-order logic as follos:</p>
+									
+									<p>1. (1) ∀x (Shaves(x) ≡ ¬ShavesSelf(x))</p>
+									<p>2. (2) ∀x (Shaves(Barber) → ¬ShavesSelf(x))</p>
+									
+									<p>Analyze the paradox:</p>
+									
+									<p>①states that a person who does not shave himself must have his barber shave him, and ②states that a person who has his barber shave him must not also shave himself.</p>
+									<p>To show that no barber satisfies these conditions, we can derive a contradiction by assuming that there is a barber who satisfies the conditions.</p>
+									
+									<p>Assumption :</p>
+
+									<p>∃x (Barber = x ∧ ∀y (Shaves(x) → ¬ShavesSelf(y)))</p>
+
+									<p>From ① and ②, we can derive the following:</p>
+<p>③ ShavesSelf(Barber) → ¬Shaves(Barber)</p>
+
+<p>From the assumption and ③, we can derive the following:</p>
+<p>④ ¬Shaves(Barber)</p>
+
+<p>From ① and ④, we can derive the following:</p>
+<p>⑤ShavesSelf(Barber)</p>
+
+<p>④ and ⑤ are a contradiction, therefore our assumption must have been false. This means that there cannot be a barber who fulfills the requirements of the barber's paradox.</p>
+<p>Therefore, no barber can fulfill the requirements of the barber’s paradox.</p>
+
+<p>・Chapter 3 Question 4 - A Canadian variant of an old puzzle.</p>
+<p>(a) Here are FOL sentences for each of the given statements:</p>
+
+<p>One of Henri or Pierre is a truth teller, and one is not.</p>
+
+<p>∀x (Truth-teller(x) ∨ ¬Truth-teller(x))</p>
+<p>∃x (Truth-teller(x) ∧ ∃y (y ≠ x ∧ ¬Truth-teller(y)))</p>
+
+<p>An inhabitant will answer yes to a question if and only if he is a truth teller and the correct answer is yes, or he is not a truth teller and the correct answer is not yes.</p>
+
+<p>∀x, q (Answer-yes(x, q) ≡ (Truth-teller(x) ∧ True(q)) ∨ ¬Truth-teller(x) ∧ ¬True(q)))</p>
+
+<p>The gauche question is correctly answered yes if and only if the proper direction to go is left.</p>
+
+<p>True(gauche) ≡ Go-left</p>
+
+<p>A dit-oui(x, q) question is correctly answered yes if and only if x will answer yes to question q.</p>
+
+<p>True(dit-oui(x, q)) ≡ Answer-yes(x, q)</p>
+
+<p>A dit-non(x, q) question is correctly answered yes if and only if x will not answer yes to q.</p>
+
+<p>True(dit-non(x, q)) ≡ ¬Answer-yes(x, q)</p>
+
+<p>Activity 2</p>
+<p>Define the functions left and right </p>
+<p>left(F)</p>
+<p>left(W)</p>
+<p>left(G)</p>
+<p>left(C)</p>
+<p>right(F)</p>
+<p>right(W)</p>
+<p>right(G)</p>
+<p>right(C)</p>
+
+<p>Define the predicates on and across</p>
+<p>on(F, left)</p>
+<p>on(W, left)</p>
+<p>on(G, left)</p>
+<p>on(C, left)</p>
+<p>across(F, right)</p>
+<p>across(W, right)</p>
+<p>across(G, right)</p>
+<p>across(C, right)</p>
+
+<p>action 1</p>
+<p>across(F, right) ∧ on(W, left) ∧ on(G, left) ∧ on(C, left)</p>
+
+<p>action 2</p>
+<p>across(F, right) ∧ across(W, right) ∧ across(G, right) ∧ on(C, left)</p>
+
+									<p>action 3</p>
+<p>across(F, right) ∧ across(W, right) ∧ across(G, right) ∧ across(C, right)</p>
+
+									
+
+<h3>Unit5</h3>
+<p>Activity 1</p>
+
+<p>What are the 3 knowledge bases identified by the authors?</p>
+	<p>1, Linguistic Knowledge Base</p>
+	<p>2, Expert Knowledge Base</p>
+	<p>3, Cognitive Knowledge Base</p>
+
+<p>What are the differences between them?</p>
+	<p>Linguistic Knowledge Base</p>
+	<p>It is lexical databases such as FrameNet, WordNet and ConceptNet.</p>
+	
+	<p>Expert Knowledge Base</p>
+	<p>It consists of useful domain knowledge for problem solving. This knowledge is represented as a set of rules.</p>
+	
+	<p>Cognitive Knowledge Base</p>
+	<p>It is a structure that manipulates knowledge as a dynamic concept network like the human knowledge processing. </p>
+<p>Activity 2</p>
+
+<p>How does the author define a ‘Knowledge-based economy’?</p>
+	<p>The author describes a ‘Knowledge-based economy as an economy driven by knowledge and technology diffusion, a greater skill level, and a creative and innovative environment. </p>
+
+
+<p>What is the triple helix model?</p>
+
+									<p>It is a model of university-industry-government relations. This model aids in studying the knowledge base of an economy in terms of a trade-off between locally stabilised trajectories versus techno-economic regimes at a global level.</p>
+
+
+<p>Activity 3</p>
+<p>What are the components of the Onto Knowledge model/ framework?</p>
+	<p>The Onto Knowledge model/framework seems to be centered around ontology-based knowledge management. It comprises a semantic toolset for information processing and user access, an ontology-based inference layer called OIL on top of the World Wide Web, and a methodology known as On-To-Knowledge Methodology (OTKM) for introducing and maintaining ontology-based knowledge management applications in enterprises.</p>
+ 
+<p>What are the example use cases given for the framework?</p>
+	<p>There are 3 use cases</p>
+<p>Swiss Life : organizational memory</p>
+	<p>BT : call centres</p>
+	<p>EnterSearch : virtual enterprise</p>
+
+									<h3>Unit6</h3>
+									<p>Formative Activities</p>
+									<p>Read Chapter 3 of Solanki, A (2019) An Introduction to Knowledge Engineering.</p>
+
+<p>Reflect on the various data acquisition methods.</p>
+	<p>The following four things are necessary : </p>
+<p>Unstructured Interviews</p>
+<p>Structured Interviews</p>
+<p>Event Recall Interviews</p>
+<p>Thinking Aloud Interviews</p>
+
+
+<p>What are the advantages and disadvantages of each method?</p>
+	<p>Unstructured Interviews</p>
+<p>It is fundamentally important to conduct unstructuredinterviews.The interview does allow the expert to bring areas of subject matter that had notbeen considered to be important to the attention of the knowledge engineer.</p>
+<p>It takes a lot time.</p>
+
+
+	<p>Structured Interviews</p>
+<p>To obtain in depth knowledge about the specific domain.</p>
+<p>Can be motivating</p>
+<p>It puts time pressure on them.</p>
+
+
+<p>Event Recall Interviews</p>
+<p>Very good for revealing a series of thought processes</p>
+<p>Tendency to fall into arguments.</p>
+
+
+	<p>Thinking Aloud Interviews</p>
+<p>These involve asking the expert how they would solve a particular problem.</p>
+<p>it should be noted that the process of verbalising their thoughts may distract the expert from solving the particular problem, and therefore can actually interfere with the normal thinking process.</p>
+
+
+<p>Think about scenarios and which methods would be suitable for each.</p>
+
+
+<p>Initial Interview</p>
+<p>　Unstructured Interviews are suitable</p>
+<p>When in depth about difficult things such as technology</p>
+  <p>  Structured Interviews are suitable</p>
+
+									
+                                    <h3>Unit8</h3>
+                                    <p>Formative Activities - Protégé</p>
+
+                                    <img src="images/KRR1.png">
+				    <img src="images/KRR2.png">
+
+				    <h3>Unit10</h3>
+                                    <p>Formative Activities - Protégé</p>
+
+                                    <img src="images/KRR3.png">
+
+									</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
